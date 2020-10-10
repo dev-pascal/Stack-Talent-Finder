@@ -1,7 +1,7 @@
 # Stack Talent Finder
 
 ## Live Demo
-asdf
+https://stack-talent-finder.netlify.app
 
 ## About Stack Overflow
 Stack Overflow is a question and answer site for professional and enthusiast programmers. The website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down and edit questions and answers in a fashion similar to a wiki or Reddit.
