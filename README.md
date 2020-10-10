@@ -11,7 +11,7 @@ Stack Overflow is a question and answer site for professional and enthusiast pro
 ## Functionality
 
 1) Find Stack Overflow user profiles via keyword search
-2) Inspect the description, reputation and most liked thread
+2) Inspect the description, reputation and most liked threads
 
 ## Built with
 * HTML
