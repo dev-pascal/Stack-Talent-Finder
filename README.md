@@ -1,7 +1,7 @@
-# Stack Overflow User Finder
+# Stack Talent Finder
 
 ## Live Demo
-https://stack-user-finder.herokuapp.com/
+asdf
 
 ## About Stack Overflow
 Stack Overflow is a question and answer site for professional and enthusiast programmers. The website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down and edit questions and answers in a fashion similar to a wiki or Reddit.
@@ -16,6 +16,5 @@ It uses Context API along with useContext and useReducer hooks for state managem
 ## Built with
 * HTML
 * CSS
-* React.js (w/ React Hooks and Context API)
-* Node.js
+* React.js (with React Hooks and Context API)
 * Stack Overflow API v2.2

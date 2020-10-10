@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+/* Elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: #333333;
+    text-decoration: none;
+    cursor: default;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type='text'],
+textarea {
+    display: block;
+    width: 60%;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+/* Utilities */
+.Content {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.all-center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    padding: 1rem;
+    border: #ccc 0.5px solid;
+    margin: 0.7rem 0;
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+}
+
+.card-2 {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-top: 1px solid rgb(88, 88, 88);
+}
+
+/* Layout */
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Buttons */
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.btn {
+    display: block;
+    margin: 1rem auto;
+    align-content: center;
+    padding: 0.6rem 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    font-weight: 800;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.btn-2 {
+    display: block;
+    margin: 1rem auto;
+    align-content: space-around;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #4285f4;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.btn-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin: 2rem 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #f48024;
+    color: white;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.3rem;
+    color: #39739d;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: white 0.5px solid;
+    padding-right: 1rem;
+    padding-left: 0.3rem;
+    background-color: #e1ecf1;
+}
+
+.flex-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.round-img {
+    border-radius: 50%;
+}
+.corner-img {
+    border: rgba(48, 44, 44, 0.623) 1px solid;
+    border-radius: 0.5rem;
+}
+/* Misc */
+
+.padding {
+    padding-right: 0.5rem;
+}
+
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+/* Forms */
+input {
+    margin: 1.2rem 0;
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.3rem;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .hide-sm {
+        display: none;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Text Styles */
+    .x-large {
+        font-size: 3rem;
+    }
+
+    .large {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
 }
