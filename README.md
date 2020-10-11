@@ -1,6 +1,6 @@
 # Stack Talent Finder
 
-## Live Demo
+## Live Demo - Try it out yourself!
 
 https://stack-talent-finder.netlify.app
 
